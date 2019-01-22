@@ -1,6 +1,7 @@
 # Compiled files
 *.tfstate
 *.tfstate.backup
+*.zip
 
 # Module directory
 .terraform
@@ -9,6 +10,8 @@
 .build-harness
 build-harness
 *.ini
+tmp
+lambda
 *~HEAD
 *backup
 *.orig
