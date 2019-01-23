@@ -2,12 +2,11 @@
 
 [![Slalom][logo]](https://slalom.com)
 
-# terraform-aws-security-buckets [![Build Status](https://api.travis-ci.com/JamesWoolfenden/terraform-aws-security-buckets.svg?branch=master)](https://travis-ci.com/JamesWoolfenden/terraform-aws-security-buckets) [![Latest Release](https://img.shields.io/github/release/JamesWoolfenden/terraform-aws-security-buckets.svg)](https://github.com/JamesWoolfenden/terraform-aws-security-buckets/releases/latest)
+# terraform-aws-security-buckets [![Build Status](https://travis-ci.com/JamesWoolfenden/terraform-aws-security-buckets.svg?branch=master)](https://travis-ci.com/JamesWoolfenden/terraform-aws-security-buckets) [![Latest Release](https://img.shields.io/github/release/JamesWoolfenden/terraform-aws-security-buckets.svg)](https://github.com/JamesWoolfenden/terraform-aws-security-buckets/releases/latest)
 
 
 This module is to create a standard place to keep your secure file objects that you need in your account. Its supposed to be a basic step, until its replaced by something more sophisticated.
 Follow the exampleA for the implementation.
-
 
 ---
 
@@ -15,15 +14,6 @@ This project uses the "build-harness" a modified version of the project ["SweetO
 
 
 It's 100% Open Source and licensed under the [APACHE2](LICENSE).
-
-
-
-
-
-
-
-
-
 
 ## Usage
 
@@ -39,21 +29,6 @@ module "security-buckets" {
 }
 ```
 
-
-
-
-
-
-## Makefile Targets
-```make
-Available targets:
-
-  help/all:                          Display help for all targets
-  help/short:                        This help short screen
-  help:                              Help screen
-  lint:                              Lint terraform code
-
-```
 ## Inputs
 
 | Name | Description | Type | Default | Required |
@@ -95,16 +70,9 @@ File a GitHub [issue](https://github.com/jameswoolfenden/terraform-aws-security-
 
 Please use the [issue tracker](https://github.com/jameswoolfenden/terraform-aws-security-buckets/issues) to report any bugs or file feature requests.
 
-
-
 ## Copyrights
 
 Copyright © 2019-2019 [Slalom, LLC](https://slalom.com)
-
-
-
-
-
 
 ## License
 
@@ -130,20 +98,10 @@ See [LICENSE](LICENSE) for full details.
     under the License.
 
 
-
-
-
-
-
-
-
-
-
-
 ### Contributors
 
-|  [![James Woolfenden][jameswoolfenden_avatar]][jameswoolfenden_homepage]<br/>[James Woolfenden][jameswoolfenden_homepage] |
-|---|
+  [![James Woolfenden][jameswoolfenden_avatar]][jameswoolfenden_homepage]<br/>[James Woolfenden][jameswoolfenden_homepage] |
+
 
   [jameswoolfenden_homepage]: https://github.com/jameswoolfenden
   [jameswoolfenden_avatar]: https://github.com/jameswoolfenden.png?size=150
