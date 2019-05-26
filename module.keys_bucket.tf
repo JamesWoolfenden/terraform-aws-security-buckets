@@ -1,6 +1,6 @@
 module "keys_bucket" {
   source                  = "JamesWoolfenden/s3/aws"
-  version                 = "0.0.3"
+  version                 = "0.2.11"
   s3_bucket_name          = "keys-${data.aws_caller_identity.current.account_id}"
   s3_bucket_policy        = "${data.template_file.keys_policy.rendered}"
   s3_bucket_force_destroy = "${var.s3_bucket_force_destroy}"
