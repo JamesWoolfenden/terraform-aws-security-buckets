@@ -1,18 +1,14 @@
 variable "s3_bucket_force_destroy" {
+  type=string
   description = ""
 }
 
 variable "key_names" {
-  type = "list"
+  type = list
 }
 
 variable "common_tags" {
-  type = "map"
+  description="implements the common tags scheme"
+  type = map
 }
 
-# this is enables you to add dependancies
-variable depends_on {
-  default     = []
-  description = "This is a way to make a module depends on, which isnt built in."
-  type        = "list"
-}
