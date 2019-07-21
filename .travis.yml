@@ -5,7 +5,7 @@ services:
 branches:
   only:
     - master
-    
+
 env:
   - VERSION="0.1.$TRAVIS_BUILD_NUMBER"
 
@@ -28,7 +28,6 @@ script:
 - terraform fmt
 - bash validate.sh
 
-## Lint check Terraform
 
 after_success:
   - git config --global user.email "builds@travis-ci.com"
