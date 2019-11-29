@@ -1,5 +1,5 @@
 variable "s3_bucket_force_destroy" {
-  type=string
+  type        = string
   description = ""
 }
 
@@ -8,7 +8,6 @@ variable "key_names" {
 }
 
 variable "common_tags" {
-  description="implements the common tags scheme"
-  type = map
+  description = "implements the common tags scheme"
+  type        = map
 }
-

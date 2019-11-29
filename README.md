@@ -29,17 +29,16 @@ module "security-buckets" {
 
 | Name | Description | Type | Default | Required |
 |------|-------------|:----:|:-----:|:-----:|
-| common_tags | - | map | - | yes |
-| depends_on | This is a way to make a module depends on, which isnt built in. | list | `<list>` | no |
-| key_names | - | list | - | yes |
-| s3_bucket_force_destroy | - | string | - | yes |
+| common\_tags | implements the common tags scheme | map | n/a | yes |
+| key\_names |  | list | n/a | yes |
+| s3\_bucket\_force\_destroy |  | string | n/a | yes |
 
 ## Outputs
 
 | Name | Description |
 |------|-------------|
-| certificates_bucket | - |
-| keys_bucket | - |
+| certificates\_bucket |  |
+| keys\_bucket |  |
 
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 ## Related Projects

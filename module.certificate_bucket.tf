@@ -6,4 +6,3 @@ module "certificates_bucket" {
   s3_bucket_force_destroy = var.s3_bucket_force_destroy
   common_tags             = var.common_tags
 }
-
