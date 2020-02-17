@@ -25,20 +25,28 @@ module "security-buckets" {
 ```
 
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
+## Providers
+
+| Name | Version |
+|------|---------|
+| aws | n/a |
+| template | n/a |
+| tls | n/a |
+
 ## Inputs
 
 | Name | Description | Type | Default | Required |
-|------|-------------|:----:|:-----:|:-----:|
-| common\_tags | implements the common tags scheme | map | n/a | yes |
-| key\_names |  | list | n/a | yes |
-| s3\_bucket\_force\_destroy |  | string | n/a | yes |
+|------|-------------|------|---------|:-----:|
+| common\_tags | implements the common tags scheme | `map` | n/a | yes |
+| key\_names | n/a | `list` | n/a | yes |
+| s3\_bucket\_force\_destroy | n/a | `string` | n/a | yes |
 
 ## Outputs
 
 | Name | Description |
 |------|-------------|
-| certificates\_bucket |  |
-| keys\_bucket |  |
+| certificates\_bucket | n/a |
+| keys\_bucket | n/a |
 
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 ## Related Projects
