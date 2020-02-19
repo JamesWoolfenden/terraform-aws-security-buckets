@@ -1,7 +1,7 @@
 
 [![Slalom][logo]](https://slalom.com)
 
-# terraform-aws-security-buckets [![Build Status](https://travis-ci.com/JamesWoolfenden/terraform-aws-security-buckets.svg?branch=master)](https://travis-ci.com/JamesWoolfenden/terraform-aws-security-buckets) [![Latest Release](https://img.shields.io/github/release/JamesWoolfenden/terraform-aws-security-buckets.svg)](https://github.com/JamesWoolfenden/terraform-aws-security-buckets/releases/latest)
+# terraform-aws-security-buckets [![Build Status](https://travis-ci.com/JamesWoolfenden/terraform-aws-security-buckets.svg?branch=master)](https://travis-ci.com/JamesWoolfenden/terraform-aws-security-buckets) [![Latest Release](https://img.shields.io/github/release/JamesWoolfenden/terraform-aws-security-buckets.svg)](https://github.com/JamesWoolfenden/terraform-aws-security-buckets/releases/latest)  [![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white)](https://github.com/pre-commit/pre-commit)
 
 This module is to create a standard place to keep your secure file objects that you need in your account. Its supposed to be a basic step, until its replaced by something more sophisticated.
 Follow the exampleA for the implementation.
@@ -69,7 +69,7 @@ Please use the [issue tracker](https://github.com/jameswoolfenden/terraform-aws-
 
 ## Copyrights
 
-Copyright © 2019-2019 [Slalom, LLC](https://slalom.com)
+Copyright © 2019-2020 [Slalom, LLC](https://slalom.com)
 
 ## License
 
