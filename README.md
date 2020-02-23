@@ -3,7 +3,10 @@
 
 # terraform-aws-security-buckets
 
- [![Build Status](https://travis-ci.com/JamesWoolfenden/terraform-aws-security-buckets.svg?branch=master)](https://travis-ci.com/JamesWoolfenden/terraform-aws-security-buckets) [![Latest Release](https://img.shields.io/github/release/JamesWoolfenden/terraform-aws-security-buckets.svg)](https://github.com/JamesWoolfenden/terraform-aws-security-buckets/releases/latest)  [![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white)](https://github.com/pre-commit/pre-commit) [![pre-commit](https://img.shields.io/badge/checkov-verified-brightgreen)](https://www.checkov.io/)
+ [![Build Status](https://travis-ci.com/JamesWoolfenden/terraform-aws-security-buckets.svg?branch=master)](https://travis-ci.com/JamesWoolfenden/terraform-aws-security-buckets)
+ [![Latest Release](https://img.shields.io/github/release/JamesWoolfenden/terraform-aws-security-buckets.svg)](https://github.com/JamesWoolfenden/terraform-aws-security-buckets/releases/latest)
+ [![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white)](https://github.com/pre-commit/pre-commit)
+ [![pre-commit](https://img.shields.io/badge/checkov-verified-brightgreen)](https://www.checkov.io/)
 
 This module is to create a standard place to keep your secure file objects that you need in your account. Its supposed to be a basic step, until its replaced by something more sophisticated.
 Follow the examplea for the implementation.
@@ -26,8 +29,7 @@ module "security-buckets" {
 }
 ```
 
-<!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
-
+<!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 ## Providers
 
 | Name | Version |
