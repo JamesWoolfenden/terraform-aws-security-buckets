@@ -29,7 +29,11 @@ module "security-buckets" {
 }
 ```
 
-<!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
+<!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
+## Requirements
+
+No requirements.
+
 ## Providers
 
 | Name | Version |
@@ -41,7 +45,7 @@ module "security-buckets" {
 ## Inputs
 
 | Name | Description | Type | Default | Required |
-|------|-------------|------|---------|:-----:|
+|------|-------------|------|---------|:--------:|
 | common\_tags | implements the common tags scheme | `map` | n/a | yes |
 | key\_names | n/a | `list` | n/a | yes |
 | s3\_bucket\_force\_destroy | n/a | `string` | n/a | yes |
@@ -107,9 +111,9 @@ under the License.
 [jameswoolfenden_avatar]: https://github.com/jameswoolfenden.png?size=150
 [logo]: https://gist.githubusercontent.com/JamesWoolfenden/5c457434351e9fe732ca22b78fdd7d5e/raw/15933294ae2b00f5dba6557d2be88f4b4da21201/slalom-logo.png
 [website]: https://slalom.com
-[github]: https://github.com/jameswoolfenden
+[linkedin]: https://www.linkedin.com/in/jameswoolfenden/
 [linkedin]: https://www.linkedin.com/company/slalom-consulting/
-[twitter]: https://twitter.com/Slalom
+[twitter]: https://twitter.com/JimWoolfenden
 
 [share_twitter]: https://twitter.com/intent/tweet/?text=terraform-aws-security-buckets&url=https://github.com/jameswoolfenden/terraform-aws-security-buckets
 [share_linkedin]: https://www.linkedin.com/shareArticle?mini=true&title=terraform-aws-security-buckets&url=https://github.com/jameswoolfenden/terraform-aws-security-buckets
