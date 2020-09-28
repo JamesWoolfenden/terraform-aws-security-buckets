@@ -27,33 +27,32 @@ module "security-buckets" {
 ```
 
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
-
 ## Requirements
 
 No requirements.
 
 ## Providers
 
-| Name     | Version |
-| -------- | ------- |
-| aws      | n/a     |
-| template | n/a     |
-| tls      | n/a     |
+| Name | Version |
+|------|---------|
+| aws | n/a |
+| template | n/a |
+| tls | n/a |
 
 ## Inputs
 
-| Name                    | Description                       | Type     | Default | Required |
-| ----------------------- | --------------------------------- | -------- | ------- | :------: |
-| common_tags             | implements the common tags scheme | `map`    | n/a     |   yes    |
-| key_names               | n/a                               | `list`   | n/a     |   yes    |
-| s3_bucket_force_destroy | n/a                               | `string` | n/a     |   yes    |
+| Name | Description | Type | Default | Required |
+|------|-------------|------|---------|:--------:|
+| common\_tags | implements the common tags scheme | `map` | n/a | yes |
+| key\_names | n/a | `list` | n/a | yes |
+| s3\_bucket\_force\_destroy | n/a | `string` | n/a | yes |
 
 ## Outputs
 
-| Name                | Description |
-| ------------------- | ----------- |
-| certificates_bucket | n/a         |
-| keys_bucket         | n/a         |
+| Name | Description |
+|------|-------------|
+| certificates\_bucket | n/a |
+| keys\_bucket | n/a |
 
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 
