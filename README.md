@@ -1,6 +1,3 @@
-
-[![Slalom][logo]](https://slalom.com)
-
 # terraform-aws-security-buckets
 
 [![Build Status](https://github.com/JamesWoolfenden/terraform-aws-security-buckets/workflows/Verify%20and%20Bump/badge.svg?branch=master)](https://github.com/JamesWoolfenden/terraform-aws-security-buckets)
@@ -30,34 +27,36 @@ module "security-buckets" {
 ```
 
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
+
 ## Requirements
 
 No requirements.
 
 ## Providers
 
-| Name | Version |
-|------|---------|
-| aws | n/a |
-| template | n/a |
-| tls | n/a |
+| Name     | Version |
+| -------- | ------- |
+| aws      | n/a     |
+| template | n/a     |
+| tls      | n/a     |
 
 ## Inputs
 
-| Name | Description | Type | Default | Required |
-|------|-------------|------|---------|:--------:|
-| common\_tags | implements the common tags scheme | `map` | n/a | yes |
-| key\_names | n/a | `list` | n/a | yes |
-| s3\_bucket\_force\_destroy | n/a | `string` | n/a | yes |
+| Name                    | Description                       | Type     | Default | Required |
+| ----------------------- | --------------------------------- | -------- | ------- | :------: |
+| common_tags             | implements the common tags scheme | `map`    | n/a     |   yes    |
+| key_names               | n/a                               | `list`   | n/a     |   yes    |
+| s3_bucket_force_destroy | n/a                               | `string` | n/a     |   yes    |
 
 ## Outputs
 
-| Name | Description |
-|------|-------------|
-| certificates\_bucket | n/a |
-| keys\_bucket | n/a |
+| Name                | Description |
+| ------------------- | ----------- |
+| certificates_bucket | n/a         |
+| keys_bucket         | n/a         |
 
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
+
 ## Related Projects
 
 Check out these related projects.
@@ -78,7 +77,7 @@ Please use the [issue tracker](https://github.com/jameswoolfenden/terraform-aws-
 
 ## Copyrights
 
-Copyright © 2019-2020 [Slalom, LLC](https://slalom.com)
+Copyright © 2019-2020 James Woolfenden
 
 ## License
 
@@ -87,19 +86,19 @@ Copyright © 2019-2020 [Slalom, LLC](https://slalom.com)
 See [LICENSE](LICENSE) for full details.
 
 Licensed to the Apache Software Foundation (ASF) under one
-or more contributor license agreements.  See the NOTICE file
+or more contributor license agreements. See the NOTICE file
 distributed with this work for additional information
-regarding copyright ownership.  The ASF licenses this file
+regarding copyright ownership. The ASF licenses this file
 to you under the Apache License, Version 2.0 (the
 "License"); you may not use this file except in compliance
-with the License.  You may obtain a copy of the License at
+with the License. You may obtain a copy of the License at
 
 <https://www.apache.org/licenses/LICENSE-2.0>
 
 Unless required by applicable law or agreed to in writing,
 software distributed under the License is distributed on an
 "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-KIND, either express or implied.  See the License for the
+KIND, either express or implied. See the License for the
 specific language governing permissions and limitations
 under the License.
 
@@ -109,12 +108,9 @@ under the License.
 
 [jameswoolfenden_homepage]: https://github.com/jameswoolfenden
 [jameswoolfenden_avatar]: https://github.com/jameswoolfenden.png?size=150
-[logo]: https://gist.githubusercontent.com/JamesWoolfenden/5c457434351e9fe732ca22b78fdd7d5e/raw/15933294ae2b00f5dba6557d2be88f4b4da21201/slalom-logo.png
-[website]: https://slalom.com
 [github]: https://github.com/jameswoolfenden
 [linkedin]: https://www.linkedin.com/in/jameswoolfenden/
 [twitter]: https://twitter.com/JimWoolfenden
-
 [share_twitter]: https://twitter.com/intent/tweet/?text=terraform-aws-security-buckets&url=https://github.com/jameswoolfenden/terraform-aws-security-buckets
 [share_linkedin]: https://www.linkedin.com/shareArticle?mini=true&title=terraform-aws-security-buckets&url=https://github.com/jameswoolfenden/terraform-aws-security-buckets
 [share_reddit]: https://reddit.com/submit/?url=https://github.com/jameswoolfenden/terraform-aws-security-buckets
