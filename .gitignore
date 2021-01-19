@@ -21,4 +21,4 @@ lambda
 *backup
 *.bak
 .terraform.tfstate.lock.info
-*.log
+.terraform.lock.hcl

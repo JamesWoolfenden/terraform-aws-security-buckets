@@ -1,5 +1,5 @@
 variable "key_names" {
-  type        = list
+  type        = list(any)
   description = "List of names to create ssh keys for"
 }
 
@@ -10,5 +10,5 @@ variable "s3_bucket_force_destroy" {
 
 variable "common_tags" {
   description = "Implements the commons tags scheme"
-  type        = map
+  type        = map(any)
 }
