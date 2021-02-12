@@ -47,8 +47,8 @@ No requirements.
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
-| common\_tags | implements the common tags scheme | `map` | n/a | yes |
-| key\_names | n/a | `list` | n/a | yes |
+| common\_tags | implements the common tags scheme | `map(any)` | n/a | yes |
+| key\_names | n/a | `list(any)` | n/a | yes |
 | s3\_bucket\_force\_destroy | n/a | `string` | n/a | yes |
 
 ## Outputs
