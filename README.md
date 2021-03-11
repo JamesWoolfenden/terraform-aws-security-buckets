@@ -43,6 +43,23 @@ No requirements.
 | template | n/a |
 | tls | n/a |
 
+## Modules
+
+| Name | Source | Version |
+|------|--------|---------|
+| certificates_bucket | JamesWoolfenden/s3/aws | 0.3.54 |
+| keys_bucket | JamesWoolfenden/s3/aws | 0.3.54 |
+
+## Resources
+
+| Name |
+|------|
+| [aws_caller_identity](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/caller_identity) |
+| [aws_key_pair](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/key_pair) |
+| [aws_s3_bucket_object](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/s3_bucket_object) |
+| [template_file](https://registry.terraform.io/providers/hashicorp/template/latest/docs/data-sources/file) |
+| [tls_private_key](https://registry.terraform.io/providers/hashicorp/tls/latest/docs/resources/private_key) |
+
 ## Inputs
 
 | Name | Description | Type | Default | Required |
@@ -57,7 +74,6 @@ No requirements.
 |------|-------------|
 | certificates\_bucket | n/a |
 | keys\_bucket | n/a |
-
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 
 ## Related Projects
