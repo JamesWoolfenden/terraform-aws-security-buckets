@@ -39,41 +39,43 @@ No requirements.
 
 | Name | Version |
 |------|---------|
-| aws | n/a |
-| template | n/a |
-| tls | n/a |
+| <a name="provider_aws"></a> [aws](#provider\_aws) | n/a |
+| <a name="provider_template"></a> [template](#provider\_template) | n/a |
+| <a name="provider_tls"></a> [tls](#provider\_tls) | n/a |
 
 ## Modules
 
 | Name | Source | Version |
 |------|--------|---------|
-| certificates_bucket | JamesWoolfenden/s3/aws | 0.3.54 |
-| keys_bucket | JamesWoolfenden/s3/aws | 0.3.54 |
+| <a name="module_certificates_bucket"></a> [certificates\_bucket](#module\_certificates\_bucket) | JamesWoolfenden/s3/aws | 0.4.34 |
+| <a name="module_keys_bucket"></a> [keys\_bucket](#module\_keys\_bucket) | JamesWoolfenden/s3/aws | 0.4.34 |
 
 ## Resources
 
-| Name |
-|------|
-| [aws_caller_identity](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/caller_identity) |
-| [aws_key_pair](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/key_pair) |
-| [aws_s3_bucket_object](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/s3_bucket_object) |
-| [template_file](https://registry.terraform.io/providers/hashicorp/template/latest/docs/data-sources/file) |
-| [tls_private_key](https://registry.terraform.io/providers/hashicorp/tls/latest/docs/resources/private_key) |
+| Name | Type |
+|------|------|
+| [aws_key_pair.ssh](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/key_pair) | resource |
+| [aws_s3_bucket_object.pem-private](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/s3_bucket_object) | resource |
+| [aws_s3_bucket_object.ssh-public](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/s3_bucket_object) | resource |
+| [tls_private_key.ssh](https://registry.terraform.io/providers/hashicorp/tls/latest/docs/resources/private_key) | resource |
+| [aws_caller_identity.current](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/caller_identity) | data source |
+| [template_file.keys_policy](https://registry.terraform.io/providers/hashicorp/template/latest/docs/data-sources/file) | data source |
+| [template_file.policy](https://registry.terraform.io/providers/hashicorp/template/latest/docs/data-sources/file) | data source |
 
 ## Inputs
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
-| common\_tags | implements the common tags scheme | `map(any)` | n/a | yes |
-| key\_names | n/a | `list(any)` | n/a | yes |
-| s3\_bucket\_force\_destroy | n/a | `string` | n/a | yes |
+| <a name="input_common_tags"></a> [common\_tags](#input\_common\_tags) | implements the common tags scheme | `map(any)` | n/a | yes |
+| <a name="input_key_names"></a> [key\_names](#input\_key\_names) | n/a | `list(any)` | n/a | yes |
+| <a name="input_s3_bucket_force_destroy"></a> [s3\_bucket\_force\_destroy](#input\_s3\_bucket\_force\_destroy) | n/a | `string` | n/a | yes |
 
 ## Outputs
 
 | Name | Description |
 |------|-------------|
-| certificates\_bucket | n/a |
-| keys\_bucket | n/a |
+| <a name="output_certificates_bucket"></a> [certificates\_bucket](#output\_certificates\_bucket) | n/a |
+| <a name="output_keys_bucket"></a> [keys\_bucket](#output\_keys\_bucket) | n/a |
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 
 ## Related Projects
