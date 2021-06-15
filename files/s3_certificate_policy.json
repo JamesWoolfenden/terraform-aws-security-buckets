@@ -13,6 +13,20 @@
       },
       "Resource": "arn:aws:s3:::${s3_bucket_name}/*",
       "Sid": "Stmt1429136633762"
+    },
+    {
+      "Action": "s3:GetObject",
+      "Condition": {
+        "Bool": {
+          "aws:SecureTransport": false
+        }
+      },
+      "Effect": "Deny",
+      "Principal": {
+        "AWS": "*"
+      },
+      "Resource": "arn:aws:s3:::${s3_bucket_name}/*",
+      "Sid": "PublicReadGetObject"
     }
   ],
   "Version": "2012-10-17"
