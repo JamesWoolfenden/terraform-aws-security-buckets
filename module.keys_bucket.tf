@@ -8,15 +8,17 @@ module "keys_bucket" {
 }
 
 resource "aws_s3_bucket_object" "pem-private" {
-  count   = length(var.key_names)
-  bucket  = "keys-${data.aws_caller_identity.current.account_id}"
-  key     = "id_rsa.${var.key_names[count.index]}"
-  content = element(tls_private_key.ssh.*.private_key_pem, count.index)
+  count      = length(var.key_names)
+  bucket     = "keys-${data.aws_caller_identity.current.account_id}"
+  key        = "id_rsa.${var.key_names[count.index]}"
+  content    = element(tls_private_key.ssh.*.private_key_pem, count.index)
+  kms_key_id = var.kms_key_id
 }
 
 resource "aws_s3_bucket_object" "ssh-public" {
-  count   = length(var.key_names)
-  bucket  = "keys-${data.aws_caller_identity.current.account_id}"
-  key     = "id_rsa.${var.key_names[count.index]}.pub"
-  content = element(tls_private_key.ssh.*.public_key_openssh, count.index)
+  count      = length(var.key_names)
+  bucket     = "keys-${data.aws_caller_identity.current.account_id}"
+  key        = "id_rsa.${var.key_names[count.index]}.pub"
+  content    = element(tls_private_key.ssh.*.public_key_openssh, count.index)
+  kms_key_id = var.kms_key_id
 }

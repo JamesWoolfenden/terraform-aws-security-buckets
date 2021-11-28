@@ -11,3 +11,8 @@ variable "common_tags" {
   description = "implements the common tags scheme"
   type        = map(any)
 }
+
+variable "kms_key_id" {
+  type        = string
+  description = "Kms key CMK to encrypt files"
+}
