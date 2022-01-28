@@ -31,52 +31,54 @@ module "security-buckets" {
 ```
 
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
+
 ## Requirements
 
 No requirements.
 
 ## Providers
 
-| Name | Version |
-|------|---------|
-| <a name="provider_aws"></a> [aws](#provider\_aws) | n/a |
-| <a name="provider_template"></a> [template](#provider\_template) | n/a |
-| <a name="provider_tls"></a> [tls](#provider\_tls) | n/a |
+| Name                                                            | Version |
+| --------------------------------------------------------------- | ------- |
+| <a name="provider_aws"></a> [aws](#provider_aws)                | n/a     |
+| <a name="provider_template"></a> [template](#provider_template) | n/a     |
+| <a name="provider_tls"></a> [tls](#provider_tls)                | n/a     |
 
 ## Modules
 
-| Name | Source | Version |
-|------|--------|---------|
-| <a name="module_certificates_bucket"></a> [certificates\_bucket](#module\_certificates\_bucket) | JamesWoolfenden/s3/aws | 0.4.34 |
-| <a name="module_keys_bucket"></a> [keys\_bucket](#module\_keys\_bucket) | JamesWoolfenden/s3/aws | 0.4.34 |
+| Name                                                                                         | Source                 | Version |
+| -------------------------------------------------------------------------------------------- | ---------------------- | ------- |
+| <a name="module_certificates_bucket"></a> [certificates_bucket](#module_certificates_bucket) | JamesWoolfenden/s3/aws | 0.4.34  |
+| <a name="module_keys_bucket"></a> [keys_bucket](#module_keys_bucket)                         | JamesWoolfenden/s3/aws | 0.4.34  |
 
 ## Resources
 
-| Name | Type |
-|------|------|
-| [aws_key_pair.ssh](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/key_pair) | resource |
-| [aws_s3_bucket_object.pem-private](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/s3_bucket_object) | resource |
-| [aws_s3_bucket_object.ssh-public](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/s3_bucket_object) | resource |
-| [tls_private_key.ssh](https://registry.terraform.io/providers/hashicorp/tls/latest/docs/resources/private_key) | resource |
-| [aws_caller_identity.current](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/caller_identity) | data source |
-| [template_file.keys_policy](https://registry.terraform.io/providers/hashicorp/template/latest/docs/data-sources/file) | data source |
-| [template_file.policy](https://registry.terraform.io/providers/hashicorp/template/latest/docs/data-sources/file) | data source |
+| Name                                                                                                                             | Type        |
+| -------------------------------------------------------------------------------------------------------------------------------- | ----------- |
+| [aws_key_pair.ssh](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/key_pair)                         | resource    |
+| [aws_s3_bucket_object.pem-private](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/s3_bucket_object) | resource    |
+| [aws_s3_bucket_object.ssh-public](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/s3_bucket_object)  | resource    |
+| [tls_private_key.ssh](https://registry.terraform.io/providers/hashicorp/tls/latest/docs/resources/private_key)                   | resource    |
+| [aws_caller_identity.current](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/caller_identity)    | data source |
+| [template_file.keys_policy](https://registry.terraform.io/providers/hashicorp/template/latest/docs/data-sources/file)            | data source |
+| [template_file.policy](https://registry.terraform.io/providers/hashicorp/template/latest/docs/data-sources/file)                 | data source |
 
 ## Inputs
 
-| Name | Description | Type | Default | Required |
-|------|-------------|------|---------|:--------:|
-| <a name="input_common_tags"></a> [common\_tags](#input\_common\_tags) | implements the common tags scheme | `map(any)` | n/a | yes |
-| <a name="input_key_names"></a> [key\_names](#input\_key\_names) | n/a | `list(any)` | n/a | yes |
-| <a name="input_kms_key_id"></a> [kms\_key\_id](#input\_kms\_key\_id) | Kms key CMK to encrypt files | `string` | n/a | yes |
-| <a name="input_s3_bucket_force_destroy"></a> [s3\_bucket\_force\_destroy](#input\_s3\_bucket\_force\_destroy) | n/a | `string` | n/a | yes |
+| Name                                                                                                   | Description                       | Type        | Default | Required |
+| ------------------------------------------------------------------------------------------------------ | --------------------------------- | ----------- | ------- | :------: |
+| <a name="input_common_tags"></a> [common_tags](#input_common_tags)                                     | implements the common tags scheme | `map(any)`  | n/a     |   yes    |
+| <a name="input_key_names"></a> [key_names](#input_key_names)                                           | n/a                               | `list(any)` | n/a     |   yes    |
+| <a name="input_kms_key_id"></a> [kms_key_id](#input_kms_key_id)                                        | Kms key CMK to encrypt files      | `string`    | n/a     |   yes    |
+| <a name="input_s3_bucket_force_destroy"></a> [s3_bucket_force_destroy](#input_s3_bucket_force_destroy) | n/a                               | `string`    | n/a     |   yes    |
 
 ## Outputs
 
-| Name | Description |
-|------|-------------|
-| <a name="output_certificates_bucket"></a> [certificates\_bucket](#output\_certificates\_bucket) | n/a |
-| <a name="output_keys_bucket"></a> [keys\_bucket](#output\_keys\_bucket) | n/a |
+| Name                                                                                         | Description |
+| -------------------------------------------------------------------------------------------- | ----------- |
+| <a name="output_certificates_bucket"></a> [certificates_bucket](#output_certificates_bucket) | n/a         |
+| <a name="output_keys_bucket"></a> [keys_bucket](#output_keys_bucket)                         | n/a         |
+
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 
 ## Related Projects
@@ -99,7 +101,7 @@ Please use the [issue tracker](https://github.com/jameswoolfenden/terraform-aws-
 
 ## Copyrights
 
-Copyright © 2019-2021 James Woolfenden
+Copyright © 2019-2022 James Woolfenden
 
 ## License
 
