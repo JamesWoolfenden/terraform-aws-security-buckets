@@ -1,13 +1,11 @@
 # terraform-aws-security-buckets
 
-[![Build Status](https://github.com/JamesWoolfenden/terraform-aws-security-buckets/workflows/Verify%20and%20Bump/badge.svg?branch=master)](https://github.com/JamesWoolfenden/terraform-aws-security-buckets)
+[![Build Status](https://github.com/JamesWoolfenden/terraform-aws-security-buckets/workflows/Verify/badge.svg?branch=main)](https://github.com/JamesWoolfenden/terraform-aws-security-buckets)
 [![Latest Release](https://img.shields.io/github/release/JamesWoolfenden/terraform-aws-security-buckets.svg)](https://github.com/JamesWoolfenden/terraform-aws-security-buckets/releases/latest)
 [![GitHub tag (latest SemVer)](https://img.shields.io/github/tag/JamesWoolfenden/terraform-aws-security-buckets.svg?label=latest)](https://github.com/JamesWoolfenden/terraform-aws-security-buckets/releases/latest)
 ![Terraform Version](https://img.shields.io/badge/tf-%3E%3D0.14.0-blue.svg)
-[![Infrastructure Tests](https://www.bridgecrew.cloud/badges/github/JamesWoolfenden/terraform-aws-security-buckets/cis_aws)](https://www.bridgecrew.cloud/link/badge?vcs=github&fullRepo=JamesWoolfenden%2Fterraform-aws-security-buckets&benchmark=CIS+AWS+V1.2)
 [![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white)](https://github.com/pre-commit/pre-commit)
 [![checkov](https://img.shields.io/badge/checkov-verified-brightgreen)](https://www.checkov.io/)
-[![Infrastructure Tests](https://www.bridgecrew.cloud/badges/github/jameswoolfenden/terraform-aws-security-buckets/general)](https://www.bridgecrew.cloud/link/badge?vcs=github&fullRepo=JamesWoolfenden%2Fterraform-aws-security-buckets&benchmark=INFRASTRUCTURE+SECURITY)
 
 This module is to create a standard place to keep your secure file objects that you need in your account. Its supposed to be a basic step, until its replaced by something more sophisticated.
 Follow the examplea for the implementation.
@@ -38,7 +36,7 @@ No requirements.
 ## Providers
 
 | Name | Version |
-|------|---------|
+| ---- | ------- |
 | <a name="provider_aws"></a> [aws](#provider\_aws) | n/a |
 | <a name="provider_template"></a> [template](#provider\_template) | n/a |
 | <a name="provider_tls"></a> [tls](#provider\_tls) | n/a |
@@ -46,14 +44,14 @@ No requirements.
 ## Modules
 
 | Name | Source | Version |
-|------|--------|---------|
-| <a name="module_certificates_bucket"></a> [certificates\_bucket](#module\_certificates\_bucket) | JamesWoolfenden/s3/aws | 0.4.34 |
-| <a name="module_keys_bucket"></a> [keys\_bucket](#module\_keys\_bucket) | JamesWoolfenden/s3/aws | 0.4.34 |
+| ---- | ------ | ------- |
+| <a name="module_certificates_bucket"></a> [certificates\_bucket](#module\_certificates\_bucket) | git::https://github.com/JamesWoolfenden/terraform-aws-s3.git | d407883afde3d84e81da4e703da4787edd1f58cd |
+| <a name="module_keys_bucket"></a> [keys\_bucket](#module\_keys\_bucket) | git::https://github.com/JamesWoolfenden/terraform-aws-s3.git | d407883afde3d84e81da4e703da4787edd1f58cd |
 
 ## Resources
 
 | Name | Type |
-|------|------|
+| ---- | ---- |
 | [aws_key_pair.ssh](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/key_pair) | resource |
 | [aws_s3_bucket_object.pem-private](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/s3_bucket_object) | resource |
 | [aws_s3_bucket_object.ssh-public](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/s3_bucket_object) | resource |
@@ -65,7 +63,7 @@ No requirements.
 ## Inputs
 
 | Name | Description | Type | Default | Required |
-|------|-------------|------|---------|:--------:|
+| ---- | ----------- | ---- | ------- | :------: |
 | <a name="input_common_tags"></a> [common\_tags](#input\_common\_tags) | implements the common tags scheme | `map(any)` | n/a | yes |
 | <a name="input_key_names"></a> [key\_names](#input\_key\_names) | n/a | `list(any)` | n/a | yes |
 | <a name="input_kms_key_id"></a> [kms\_key\_id](#input\_kms\_key\_id) | Kms key CMK to encrypt files | `string` | n/a | yes |
@@ -74,7 +72,7 @@ No requirements.
 ## Outputs
 
 | Name | Description |
-|------|-------------|
+| ---- | ----------- |
 | <a name="output_certificates_bucket"></a> [certificates\_bucket](#output\_certificates\_bucket) | n/a |
 | <a name="output_keys_bucket"></a> [keys\_bucket](#output\_keys\_bucket) | n/a |
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
